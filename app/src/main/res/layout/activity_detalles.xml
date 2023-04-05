@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_gradient"
+    android:orientation="vertical"
+    tools:context=".DetallesActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="161dp">
+
+        <ImageView
+            android:id="@+id/ivPortada"
+            android:layout_width="match_parent"
+            android:layout_height="159dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/interestellar"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="1dp" />
+
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical"
+            android:shadowColor="#54006A"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="4"
+            android:text="Interestellar"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="40dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="54dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvEstrenoDetalles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="6dp"
+        android:shadowColor="#FFFFFF"
+        android:text="Estreno en 1985"
+        android:textAlignment="viewEnd"
+        android:textColor="#FFFFFF"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/tvDescripcionDetalles"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:gravity="center_vertical"
+        android:paddingStart="6dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="6dp"
+        android:text="Muchas cosas estan pasando en la ciudad de la furia, espacio y tiempo"
+        android:textAlignment="viewStart"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvDirectorDetalles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp"
+        android:text="Dirigida por: Rob Minkoff, Roger Allers"
+        android:textColor="#FFFFFF"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/tvGenerosDetalles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp"
+        android:text="Genero: Animación, Aventura"
+        android:textColor="#FFFFFF"
+        android:textStyle="italic" />
+
+</LinearLayout>
