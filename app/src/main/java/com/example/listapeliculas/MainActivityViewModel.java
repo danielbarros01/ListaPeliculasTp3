@@ -15,8 +15,6 @@ import java.util.ArrayList;
 public class MainActivityViewModel extends AndroidViewModel {
     private Context context;
     ArrayList<Pelicula> lista = new ArrayList<>();
-
-    private MutableLiveData<Pelicula> peliculaSeleccionada = new MutableLiveData<>();
     private MutableLiveData<ArrayList<Pelicula>> peliculas = new MutableLiveData<>();
 
     public MainActivityViewModel(@NonNull Application application) {
